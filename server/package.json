@@ -1,0 +1,29 @@
+{
+  "name": "server",
+  "version": "1.0.0",
+  "description": "server for nextagram",
+  "main": "server.js",
+  "type": "module",
+  "scripts": {
+    "start": "node server.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/mrogers23458/nextagram.git"
+  },
+  "author": "mrogers23458",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/mrogers23458/nextagram/issues"
+  },
+  "homepage": "https://github.com/mrogers23458/nextagram#readme",
+  "dependencies": {
+    "apollo-server-core": "^3.10.3",
+    "apollo-server-express": "^3.10.3",
+    "bcrypt": "^5.1.0",
+    "express": "^4.18.2",
+    "graphql": "^16.6.0",
+    "mongoose": "^6.6.7",
+    "path": "^0.12.7"
+  }
+}

@@ -5,7 +5,7 @@ import http from "http";
 import typeDefs from "./schemas/typeDefs.js";
 import resolvers from "./schemas/resolvers.js";
 import db from "./config/connection.js";
-console.log("db", db);
+
 async function startApolloServer(typeDefs, resolvers) {
   const app = express();
   const httpServer = http.createServer(app);

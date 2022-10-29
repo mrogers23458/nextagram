@@ -20,6 +20,14 @@ const resolvers = {
         throw new Error("passwords do not match");
       }
     },
+    createUser: async (parent, { userName, fullName, email, password }) => {
+      const user = await User.create({ userName, fullName, email, password });
+      if (user) {
+        return user;
+      } else {
+        throw new Error("user cannot be created");
+      }
+    },
   },
 };
 

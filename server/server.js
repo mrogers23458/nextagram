@@ -5,8 +5,12 @@ import http from "http";
 import typeDefs from "./schemas/typeDefs.js";
 import resolvers from "./schemas/resolvers.js";
 import db from "./config/connection.js";
-
+import fs from "fs";
+import mongo from "mongodb";
+import Grid from "gridfs";
+import mongoose from "mongoose";
 async function startApolloServer(typeDefs, resolvers) {
+  const bucket = new mongo.GridFSBucket(db, { bucketName: "images" });
   const app = express();
   const httpServer = http.createServer(app);
   const server = new ApolloServer({

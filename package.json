@@ -1,0 +1,25 @@
+{
+  "name": "nextagram",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "concurrently \"npm run client\" \"npm run server\"",
+    "client": "cd ./client & npm run dev",
+    "server": "cd ./server & npm run start"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/mrogers23458/nextagram.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/mrogers23458/nextagram/issues"
+  },
+  "homepage": "https://github.com/mrogers23458/nextagram#readme",
+  "dependencies": {
+    "concurrently": "^7.6.0"
+  }
+}
